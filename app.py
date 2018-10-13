@@ -42,22 +42,3 @@ def get_price_from_amazon(url, best_price):
 if __name__ == '__main__':
     print(get_price_from_amazon('https://www.amazon.co.uk/Super-Mario-Party-Nintendo-Switch/dp/B07DTNGK5V/ref=sr_1_3?s=videogames&ie=UTF8&qid=1539340023&sr=1-3', 42.99))
     print(get_price_from_amazon('https://www.amazon.co.uk/Nintendo-Switch-Joy-Controller-Pair/dp/B01NBU1LP4/ref=pd_rhf_ee_s_cp_0_2?_encoding=UTF8&pd_rd_i=B01NBU1LP4&pd_rd_r=6XN8MG93RXAEB4BNXY1Z&pd_rd_w=AyJLg&pd_rd_wg=ibQZJ&psc=1&refRID=6XN8MG93RXAEB4BNXY1Z', 42.99))
-
-
-# def get_price(title, url, price_wanted, tag):
-#     response = requests.get(url)
-#     soup = BeautifulSoup(response.content, 'html.parser')
-#     now = datetime.datetime.now()
-#     current_date_time = now.strftime("%Y-%m-%d %H:%M:%S")
-
-    # Search the returned HTML for the price
-    # price = soup.find(id=f'{tag}').string
-    # Remove the pound sign and convert the price from a string to a decimal
-    # price = float(
-    #     price.replace('£', '')
-    # )
-    # return tag
-    # return f'Title: {title}\nDate & time: {current_date_time}\ncurrent price: £{price}\nwanted price: £{price_wanted}'
-
-# if __name__ == '__main__':
-    # print(get_price('Super Mario Party', 'https://www.amazon.co.uk/Super-Mario-Party-Nintendo-Switch/dp/B07DTNGK5V/ref=sr_1_3?s=videogames&ie=UTF8&qid=1539340023&sr=1-3', 44.99, "priceblock_ourprice"))
