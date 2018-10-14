@@ -45,6 +45,10 @@ def get_price_from_amazon(url, best_price):
     # return f'{title}: £{price}'
     return result
 
+def write_to_csv_file(file_name, data):
+    return file_name, data
+
 if __name__ == '__main__':
     print(get_price_from_amazon('https://www.amazon.co.uk/Super-Mario-Party-Nintendo-Switch/dp/B07DTNGK5V/ref=sr_1_3?s=videogames&ie=UTF8&qid=1539340023&sr=1-3', 42.99))
     print(get_price_from_amazon('https://www.amazon.co.uk/Nintendo-Switch-Joy-Controller-Pair/dp/B01NBU1LP4/ref=pd_rhf_ee_s_cp_0_2?_encoding=UTF8&pd_rd_i=B01NBU1LP4&pd_rd_r=6XN8MG93RXAEB4BNXY1Z&pd_rd_w=AyJLg&pd_rd_wg=ibQZJ&psc=1&refRID=6XN8MG93RXAEB4BNXY1Z', 42.99))
+    print(write_to_csv_file('log', 'test data'))
