@@ -29,7 +29,7 @@ def write_to_csv_file(file_name, data):
     with open(f'{file_name}.csv', 'a') as price_file:
         price_writer = csv.writer(price_file, delimiter=',')
         price_writer.writerow(data)
-    return f'{data} written to {file_name}.csv'
+    return 0
 
 def write_to_txt_file(file_name, data):
     # Write the price to a text file
@@ -37,4 +37,4 @@ def write_to_txt_file(file_name, data):
     f.write(
         str(data)
         )
-    return f'{data} written to {file_name}.txt'
+    return 0
